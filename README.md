@@ -196,16 +196,6 @@ This project uses **PuLP** with the **CBC (COIN-OR Branch and Cut)** solver:
 - Handles MILP problems with ~200 binary variables and ~14,000 continuous variables
 - Typical solve time: 3-5 minutes per scenario
 
-## Algorithm
-
-The CBC solver uses **Branch and Bound with Cutting Planes**:
-
-1. Solve LP relaxation (ignore integer constraints)
-2. Add cutting planes to tighten bounds
-3. Branch on fractional variables
-4. Prune infeasible/suboptimal branches
-5. Return optimal integer solution
-
 ## Assumptions
 
 1. Single time period (annual planning horizon)
@@ -237,7 +227,7 @@ The CBC solver uses **Branch and Bound with Cutting Planes**:
 
 ## Author
 
-**Md. Kamrul Nishat**  
+**Md. Mahbubul Nishat**  
 GitHub: [@mknishat](https://github.com/mknishat)
 
 ## License
